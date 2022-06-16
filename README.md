@@ -1,3 +1,18 @@
+:heavy_exclamation_mark:**DISCLAIMER**: this is a fork of [Anomaly-Transformer repository](https://github.com/thuml/Anomaly-Transformer) adjusted to run [FIREMAN](https://github.com/5uperpalo/FIREMAN-project) datasets.
+# Setup environment
+How to setup python venv to run the code on linux machine:
+```bash
+sudo apt update
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt-get install python3.6
+sudo apt-get install python3.6-venv
+mkdir ~/.venvs
+python3.6 -m venv ~/.venvs/anomaly-transformer
+source ~/.venvs/anomaly-transformer/bin/activate
+pip install torch==1.4.0 sklearn pandas pillow
+```
+
 # Anomaly-Transformer (ICLR 2022 Spotlight)
 Anomaly Transformer: Time Series Anomaly Detection with Association Discrepancy
 
@@ -21,6 +36,10 @@ bash ./scripts/SMD.sh
 bash ./scripts/MSL.sh
 bash ./scripts/SMAP.sh
 bash ./scripts/PSM.sh
+bash ./scripts/LLFault.sh
+bash ./scripts/SinglePhaseSag.sh
+bash ./scripts/ThreePhaseGridFault.sh
+bash ./scripts/ThreePhaseSensorFault.sh
 ```
 
 ## Main Result

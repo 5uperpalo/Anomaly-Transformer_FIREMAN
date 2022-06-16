@@ -1,0 +1,2 @@
+python main.py --anormly_ratio 0.5 --num_epochs 10 --batch_size 256 --mode train --dataset LLFault --data_path dataset/LLFault --input_c 13 --output_c 13
+python main.py --anormly_ratio 0.5 --num_epochs 10 --batch_size 256 --mode test --dataset LLFault --data_path dataset/LLFault --input_c 13 --output_c 13 --pretrained_model 20

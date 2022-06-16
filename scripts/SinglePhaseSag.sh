@@ -1,0 +1,2 @@
+python main.py --anormly_ratio 0.5 --num_epochs 10 --batch_size 256 --mode train --dataset SinglePhaseSag --data_path dataset/SinglePhaseSag --input_c 13 --output_c 13
+python main.py --anormly_ratio 0.5 --num_epochs 10 --batch_size 256 --mode test --dataset SinglePhaseSag --data_path dataset/SinglePhaseSag --input_c 13 --output_c 13 --pretrained_model 20
